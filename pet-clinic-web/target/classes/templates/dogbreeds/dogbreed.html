@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'owners')}">
+<head>
+    <meta charset="UTF-8"/>
+    <title>List of Dog breeds</title>
+</head>
+<body>
+<!--/*@thymesVar id="owner" type="guru.springframework.sfgpetclinic.model.Owner"*/-->
+<h2 th:text="${dogbreed.getDogBreedName()}">fdasfa</h2>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th style="width: 150px;">Summary</th>
+        <th style="width: 150px;">Country of Origin</th>
+        <th style="width: 150px;">Also known as</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td th:text="${dogbreed.getText()}">saf</td>
+        <td th:text="${dogbreed.getCountry()}">saf</td>
+        <td th:text="${dogbreed.getAltname()}">saf</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
